@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2? family=Poppins:wght@300;400; 500; 600; 700; 800;900& display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: #ededed;
+    background: url('bgcolor.png') no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f5;
+}
+
+    
+    /* Card Styles */
+.card {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+    
+.card:hover {
+    transform: translateY(-5px);
+}
+    
+.card-image {
+    width: 100%;
+    height: auto;
+}
+    
+.card-content {
+    padding: 20px;
+}
+    
+.card-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+    
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+    
+.card-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00abf0;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+    
+.card-button:hover {
+    background-color: #265ab5;
+}
+
+.aboutme-content {
+    max-width: 800px;
+    text-align: start;
+    margin-left: 30px;
+}
+
+.aboutme-content h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.aboutme-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ededed;
+}
+
+.aboutme-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.aboutme-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #ededed;
+}
+    
+    /* Responsive Style */
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+    
+    .card-content h2 {
+        font-size: 20px;
+    }
+}
+
+.header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 30px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a.active {
+    color: #00abf0;
+}

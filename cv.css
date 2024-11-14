@@ -1,0 +1,119 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: url('bgcolor.png') no-repeat;
+    
+}
+
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 24px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.navbar a.active {
+    color: #00abf0;
+}
+
+/* Centered image container styles */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; /* Space below header */
+}
+
+.bg-image {
+    width: auto;
+    height: 300px;
+}
+
+/* Content styles */
+.container {
+    text-align: center;
+    margin-top: 20px; /* Space between image and CV content */
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: italic;
+    color: #ededed;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .download-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .bg-image {
+        height: 200px; /* Smaller image for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .download-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .bg-image {
+        height: 150px; /* Smaller image for mobile */
+    }
+}
